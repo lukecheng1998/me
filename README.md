@@ -1,3 +1,10 @@
+## Information about this website begins here
+
+
+
+
+## Important NPM information below 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
