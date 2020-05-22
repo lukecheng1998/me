@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, StylesProvider } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
@@ -7,6 +7,9 @@ import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import CardContent from "@material-ui/core/CardContent";
 import portrait from "../images/portrait.jpg";
+import talkpurdue from "../images/talkpurdue.png";
+import twistter307 from "../images/twistter307.png";
+import honestly from "../images/honestly.png";
 const useStyles = makeStyles((theme) => ({
   ...theme.spreadThis,
   root: {
@@ -40,6 +43,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     marginBottom: "20px",
   },
+  imageStyles: {},
+ 
 }));
 export class Home extends Component {
   render() {
@@ -49,15 +54,6 @@ export class Home extends Component {
         <Grid className={classes.root}>
           <Grid item sm />
           <Grid item sm>
-            <div className={classes.image}>
-              <img
-                src={portrait}
-                alt="portrait"
-                width="50"
-                height="50"
-                className={classes.image}
-              />
-            </div>
             <Typography
               variant="h2"
               className={classes.pageTitle}
@@ -72,6 +68,18 @@ export class Home extends Component {
             >
               Hello learn about me and my projects here!
             </Typography>
+          </Grid>
+
+          <Grid container spacing={0} alignItems="center" justify="center">
+            <div className={classes.image}>
+              <img
+                src={portrait}
+                alt="portrait"
+                width="200"
+                height="200"
+                className={classes.image}
+              />
+            </div>
           </Grid>
         </Grid>
         <br />
@@ -90,21 +98,64 @@ export class Home extends Component {
                 </Typography>
                 <CardContent>
                   <h4 align="center">Talk Purdue</h4>
+                  <Grid
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <img
+                      src={talkpurdue}
+                      width="500"
+                      height="300"
+                      alt="talkpurdue"
+                    />
+                  </Grid>
                   <h4 align="center">Twistter</h4>
+                  <Grid
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <img
+                      src={twistter307}
+                      width="500"
+                      height="300"
+                      alt="twistter"
+                    />
+                  </Grid>
                   <h4 align="center">Honestly</h4>
+                  <Grid
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <img
+                      src={honestly}
+                      width="500"
+                      height="300"
+                      alt="twistter"
+                    />
+                  </Grid>
                 </CardContent>
-                <Link>
+                <Grid
+                  container
+                  spacing={0}
+                  alignItems="center"
+                  justify="center"
+                  marginBottom="20"
+                >
                   <Button
                     variant="contained"
-                    tip="Projects"
                     component={Link}
+                    color="#FFFFF"
                     to="/Projects"
-                    textAlign="center"
-                    color="default"
                   >
-                    View More
+                    View All
                   </Button>
-                </Link>
+                </Grid>
               </Card>
             </Grid>
             <Grid item xs={6}>
@@ -119,20 +170,16 @@ export class Home extends Component {
                   About Me!
                 </Typography>
                 <CardContent>
+                  <Typography 
+                  variant="p"
+                  gutterBottom
+                  align="center">
+                    Hello, I love learning about the world. Currently I am learning how to use material ui, JavaScript, and python to design websites make really fun algorithms.
+                    Check back later to see more up coming projects!
+                  </Typography>
+                  <h4 align="center">Purdue Run Club</h4>
                   <h4 align="center">Boiler Gold Rush</h4>
                 </CardContent>
-                <Link>
-                  <Button
-                    variant="contained"
-                    tip="About Me"
-                    component={Link}
-                    to="/About"
-                    textAlign="center"
-                    color="default"
-                  >
-                    Learn more
-                  </Button>
-                </Link>
               </Card>
             </Grid>
           </Grid>
