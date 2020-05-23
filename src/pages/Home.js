@@ -85,7 +85,7 @@ export class Home extends Component {
         <br />
         <Grid className={classes.cardControl}>
           <Grid container spacing={3}>
-            <Grid item xs={6}>
+            <Grid item xs={8}>
               <Card className={classes.cardRoot}>
                 <Typography
                   className={classes.cardTitle}
@@ -158,7 +158,7 @@ export class Home extends Component {
                 </Grid>
               </Card>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={4}>
               <Card className={classes.cardRoot}>
                 <Typography
                   className={classes.cardTitle}
@@ -177,8 +177,40 @@ export class Home extends Component {
                     Hello, I love learning about the world. Currently I am learning how to use material ui, JavaScript, and python to design websites make really fun algorithms.
                     Check back later to see more up coming projects!
                   </Typography>
+                  <Grid
+                  container
+                  spacing={0}
+                  alignItems="center"
+                  justify="center"
+                  marginBottom="20"
+                >
+                  <Button
+                    variant="contained"
+                    component={Link}
+                    color="#FFFFF"
+                    to="/About"
+                  >
+                    Learn more
+                  </Button>
+                </Grid>
                   <h4 align="center">Purdue Run Club</h4>
                   <h4 align="center">Boiler Gold Rush</h4>
+                  <Grid
+                  container
+                  spacing={0}
+                  alignItems="center"
+                  justify="center"
+                  marginBottom="20"
+                >
+                  <Button
+                    variant="contained"
+                    component={Link}
+                    color="#FFFFF"
+                    to="/Other"
+                  >
+                    See more
+                  </Button>
+                </Grid>
                 </CardContent>
               </Card>
             </Grid>

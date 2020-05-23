@@ -44,7 +44,7 @@ class Navbar extends Component {
           <ToolBar>
             <img src={logo} alt="logo" className={classes.logo} />
             <Fragment>
-              <Link to="/">
+              <Link to="/" >
                 <Button tip="Home" component={Link} to="/">
                   <HomeIcon edge="start" className={classes.iconSpacing} />
                 </Button>
