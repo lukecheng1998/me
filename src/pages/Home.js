@@ -44,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "20px",
   },
   imageStyles: {},
- 
 }));
 export class Home extends Component {
   render() {
@@ -94,8 +93,9 @@ export class Home extends Component {
                   align="center"
                   gutterBottom
                 >
-                  My Projects
+                  My Featured Projects
                 </Typography>
+
                 <CardContent>
                   <h4 align="center">Talk Purdue</h4>
                   <Grid
@@ -170,47 +170,46 @@ export class Home extends Component {
                   About Me!
                 </Typography>
                 <CardContent>
-                  <Typography 
-                  variant="p"
-                  gutterBottom
-                  align="center">
-                    Hello, I love learning about the world. Currently I am learning how to use material ui, JavaScript, and python to design websites make really fun algorithms.
-                    Check back later to see more up coming projects!
+                  <Typography variant="p" gutterBottom align="center">
+                    Hello, I love learning about the world. Currently I am
+                    learning how to use material ui, JavaScript, and python to
+                    design websites make really fun algorithms. Check back later
+                    to see more up coming projects!
                   </Typography>
                   <Grid
-                  container
-                  spacing={0}
-                  alignItems="center"
-                  justify="center"
-                  marginBottom="20"
-                >
-                  <Button
-                    variant="contained"
-                    component={Link}
-                    color="#FFFFF"
-                    to="/About"
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    justify="center"
+                    marginBottom="20"
                   >
-                    Learn more
-                  </Button>
-                </Grid>
+                    <Button
+                      variant="contained"
+                      component={Link}
+                      color="#FFFFF"
+                      to="/About"
+                    >
+                      Learn more
+                    </Button>
+                  </Grid>
                   <h4 align="center">Purdue Run Club</h4>
                   <h4 align="center">Boiler Gold Rush</h4>
                   <Grid
-                  container
-                  spacing={0}
-                  alignItems="center"
-                  justify="center"
-                  marginBottom="20"
-                >
-                  <Button
-                    variant="contained"
-                    component={Link}
-                    color="#FFFFF"
-                    to="/Other"
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    justify="center"
+                    marginBottom="20"
                   >
-                    See more
-                  </Button>
-                </Grid>
+                    <Button
+                      variant="contained"
+                      component={Link}
+                      color="#FFFFF"
+                      to="/Other"
+                    >
+                      See more
+                    </Button>
+                  </Grid>
                 </CardContent>
               </Card>
             </Grid>

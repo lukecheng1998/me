@@ -49,6 +49,9 @@ export class Other extends Component {
         <Typography variant="h3" className={classes.pageTitle} align="center">
           Boiler Gold Rush
         </Typography>
+        <Typography variant="body1" className={classes.cardRoot} align="center">
+          Coming Soon
+        </Typography>
       </Grid>
     );
   }

@@ -15,7 +15,38 @@ export default {
     },
     spreadThis: {
         textAlign: 'center',
+        root: {
+            flexGrow: 1,
+            alignItems: "center",
+          },
+          paper: {
         
+            textAlign: "center",
+            color: "primary",
+          },
+          pageTitle: {
+            margin: "10px auto 10px auto",
+          },
+          image: {
+            width: 700,
+            height: 700,
+            objectFit: "cover",
+            maxWidth: "100%",
+            borderRadius: "50%",
+            align: "center",
+          },
+          cardRoot: {
+            minWidth: 100,
+            marginBottom: 20,
+          },
+          cardTitle: {
+            fontSize: 14,
+          },
+          cardControl: {
+        
+            marginBottom: "20px",
+          },
+          imageStyles: {},
     },
 
 }
